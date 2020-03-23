@@ -18,6 +18,7 @@
   ],
   "activationEvents": [
     "onCommand:gauge.createProject",
+    "onCommand:gauge.help.reportIssue",
     "workspaceContains:manifest.json",
     "onLanguage:gauge"
   ],
@@ -123,6 +124,11 @@
       {
         "command": "gauge.execute.scenarios",
         "title": "Run Scenarios",
+        "category": "Gauge"
+      },
+      {
+        "command": "gauge.help.reportIssue",
+        "title": "Report Issue",
         "category": "Gauge"
       },
       {

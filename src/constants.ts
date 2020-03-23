@@ -28,6 +28,7 @@ export enum GaugeVSCodeCommands {
     GenerateConceptStub = 'gauge.generate.concept',
     ShowReferences = 'gauge.showReferences',
     ShowReferencesAtCursor = 'gauge.showReferences.atCursor',
+    ReportIssue = 'gauge.help.reportIssue',
     Open = 'gauge.open',
     RepeatExecution = 'gauge.execute.repeat',
     SwitchProject = 'gauge.specexplorer.switchProject',
