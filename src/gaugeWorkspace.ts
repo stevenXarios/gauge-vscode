@@ -142,6 +142,7 @@ export class GaugeWorkspace extends Disposable {
         if (!ProjectFactory.isGaugeProject(folder)) return;
         let project = ProjectFactory.get(folder);
         if (this._clientsMap.has(project.root())) return;
+        process.env.GAUGE_INGORE_RUNNER_BUILD_FAILURES = "true";
         let serverOptions = {
             command: this.cli.gaugeCommand(),
             args: ["daemon", "--lsp", "--dir=" + project.root()],
