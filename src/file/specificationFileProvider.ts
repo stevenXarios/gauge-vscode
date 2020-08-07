@@ -73,7 +73,7 @@ export class SpecificationProvider extends Disposable {
                 "> To turn off these comments, set the configuration" +
                 "`gauge.create.specification.withHelp` to false." + EOL;
         }
-        text += EOL + "## SCEANRIO HEADING" + EOL + EOL + "* step" + EOL;
+        text += EOL + "## SCENARIO HEADING" + EOL + EOL + "* step" + EOL;
         let line = text.split(EOL).length - 2;
         let range = new Range(new Position(line, 2), new Position(line, 6));
         return { text: text, range: range };
